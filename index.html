@@ -6,18 +6,40 @@
 	<title>Geolocatie IP</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+<!doctype html>
+<html lang="ro">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Geolocatie IP</title>
+	<link rel="stylesheet" href="style.css">
+	</head>
 <body>
-	<main class="card">
+	<main class="card" role="main">
 		<h1>Geolocatie IP</h1>
+
+		<div id="alert" class="alert" aria-live="polite" hidden></div>
+
+		<div class="form">
+			<input id="ipInput" type="text" inputmode="numeric" placeholder="Introdu IP (ex: 8.8.8.8) sau lasă gol" aria-label="IP" />
+			<button id="lookup">Caută</button>
+			<button id="detect">Detectează</button>
+		</div>
+
 		<div class="info">
 			<div class="row"><strong>IP:</strong> <span id="ip">—</span></div>
-			<div class="row"><strong>City:</strong> <span id="city">—</span></div>
+			<div class="row"><strong>Oraș:</strong> <span id="city">—</span></div>
+			<div class="row"><strong>Țară:</strong> <span id="country">—</span></div>
+			<div class="row"><strong>Lat,Lng:</strong> <span id="latlon">—</span></div>
 		</div>
+
 		<div class="actions">
 			<button id="refresh">Reîncarcă</button>
 		</div>
-		<p class="note">Date preluate de la <a href="https://ipapi.co/" target="_blank" rel="noopener">ipapi.co</a></p>
+
+		<p class="note">Date preluate de la <a href="https://ipapi.co/" target="_blank" rel="noopener">ipapi.co</a> și <a href="https://ipwhois.app/" target="_blank" rel="noopener">ipwhois.app</a></p>
 	</main>
+
 	<script src="script.js"></script>
 </body>
 </html>

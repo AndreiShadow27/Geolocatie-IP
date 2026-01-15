@@ -7,9 +7,17 @@ h1{margin:0 0 16px;font-size:20px}
 .info{margin:10px 0 16px}
 .row{display:flex;justify-content:space-between;padding:8px 12px;border-radius:8px;background:#f8fafc;margin:6px 0}
 .row strong{color:#111827}
-#ip,#city{color:var(--accent)}
 .actions{margin-top:10px}
 button{background:var(--accent);color:#fff;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
 .note{margin-top:12px;font-size:13px;color:var(--muted)}
 a{color:var(--accent)}
+
+/* New: alert area and form */
+.alert{padding:10px 12px;border-radius:8px;margin-bottom:12px;display:block;text-align:left}
+.alert.error{background:#fee2e2;color:#991b1b;border:1px solid #fca5a5}
+.alert.info{background:#e6f0ff;color:#0b3b8c;border:1px solid #bcd7ff}
+.form{display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:12px}
+.form input[type="text"]{flex:1;max-width:240px;padding:8px 10px;border-radius:8px;border:1px solid #e6eefc}
+.form button{padding:8px 10px}
+#ip,#city{color:var(--accent)}
 

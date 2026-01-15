@@ -1,0 +1,15 @@
+:root{--bg:#f3f7fb;--card:#ffffff;--accent:#2b7cff;--muted:#6b7280}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);display:flex;align-items:center;justify-content:center}
+.card{width:min(520px,92vw);background:var(--card);padding:28px;border-radius:12px;box-shadow:0 6px 20px rgba(17,24,39,0.08);text-align:center}
+h1{margin:0 0 16px;font-size:20px}
+.info{margin:10px 0 16px}
+.row{display:flex;justify-content:space-between;padding:8px 12px;border-radius:8px;background:#f8fafc;margin:6px 0}
+.row strong{color:#111827}
+#ip,#city{color:var(--accent)}
+.actions{margin-top:10px}
+button{background:var(--accent);color:#fff;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
+.note{margin-top:12px;font-size:13px;color:var(--muted)}
+a{color:var(--accent)}
+

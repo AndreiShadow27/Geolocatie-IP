@@ -1,46 +1,47 @@
 <!doctype html>
 <html lang="ro">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Geolocatie IP</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Geolocatie IP</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<!doctype html>
-<html lang="ro">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Geolocatie IP</title>
-	<link rel="stylesheet" href="style.css">
-	</head>
 <body>
-	<main class="card" role="main">
-		<h1>Geolocatie IP</h1>
+  <div class="wrap">
+    <main class="card" role="main">
+      <h1>Geolocatie IP</h1>
+      <p class="lead">Afișează adresa IP și locația geografică curentă.</p>
 
-		<div id="alert" class="alert" aria-live="polite" hidden></div>
+      <table aria-label="Informații IP">
+        <tr>
+          <th>IP (query)</th>
+          <td id="ip" class="value">—</td>
+        </tr>
+        <tr>
+          <th>Țară</th>
+          <td id="country">—</td>
+        </tr>
+        <tr>
+          <th>Oraș</th>
+          <td id="city">—</td>
+        </tr>
+        <tr>
+          <th>Latitudine / Longitudine</th>
+          <td id="latlon">—</td>
+        </tr>
+      </table>
 
-		<div class="form">
-			<input id="ipInput" type="text" inputmode="numeric" placeholder="Introdu IP (ex: 8.8.8.8) sau lasă gol" aria-label="IP" />
-			<button id="lookup">Caută</button>
-			<button id="detect">Detectează</button>
-		</div>
+      <div class="controls">
+        <button id="refreshBtn">Refresh IP</button>
+        <button id="copyBtn" class="secondary">Copiază IP</button>
+        <div id="status" class="muted">&nbsp;</div>
+      </div>
 
-		<div class="info">
-			<div class="row"><strong>IP:</strong> <span id="ip">—</span></div>
-			<div class="row"><strong>Oraș:</strong> <span id="city">—</span></div>
-			<div class="row"><strong>Țară:</strong> <span id="country">—</span></div>
-			<div class="row"><strong>Lat,Lng:</strong> <span id="latlon">—</span></div>
-		</div>
+      <p class="note">Date preluate de la <a href="https://ip-api.com/" target="_blank" rel="noopener">ip-api.com</a>. Apasă <strong>Refresh IP</strong> pentru actualizare.</p>
+    </main>
+  </div>
 
-		<div class="actions">
-			<button id="refresh">Reîncarcă</button>
-		</div>
-
-		<p class="note">Date preluate de la <a href="https://ipapi.co/" target="_blank" rel="noopener">ipapi.co</a> și <a href="https://ipwhois.app/" target="_blank" rel="noopener">ipwhois.app</a></p>
-	</main>
-
-	<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 
